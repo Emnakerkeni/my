@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Gestion des Produits</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for the navbar */
+        .navbar {
+            background-color: #2C3E50; /* Dark blue */
+            box-shadow: 0 4px 6px -6px #222;
+        }
+
+        .navbar-brand {
+            color: #ECF0F1; /* White */
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ECF0F1 !important; /* White */
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #F39C12 !important; /* Orange */
+        }
+
+        .dropdown-menu .dropdown-item {
+            color: #333 !important; /* Dark grey */
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #EAEDED; /* Light grey */
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ECF0F1; /* White */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Gestion Produits</a>
+
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/produits">Home</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Produits
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" routerLink="/add-produit">Ajouter</a>
+                        <a class="dropdown-item" href="#">Lister</a>
+                    </div>
+                </li>
+                <!-- Other nav items here -->
+            </ul>
+        </div>
+    </nav>
+    <router-outlet></router-outlet>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

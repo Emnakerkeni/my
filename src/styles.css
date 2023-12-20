@@ -1,0 +1,32 @@
+/* Custom styles for the navbar */
+.navbar {
+    background-color: #2C3E50; /* Dark blue */
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.navbar-brand {
+    color: #ECF0F1; /* White */
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ECF0F1 !important; /* White */
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #F39C12 !important; /* Orange */
+}
+
+.dropdown-menu .dropdown-item {
+    color: #333 !important; /* Dark grey */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #EAEDED; /* Light grey */
+}
+
+.navbar-toggler-icon {
+    background-color: #ECF0F1; /* White */
+}
